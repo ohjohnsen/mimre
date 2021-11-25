@@ -1,16 +1,12 @@
 // http is an inbuilt module in Node.js
-const http = require("http");
+const express = require("express");
+const app = express();
+const port = process.env.PORT || 5000;
 
-// createServer method takes a callback function as argument
-// the callback function takes two arguments req and re
-const server = http.createServer(function (req, res) {
-  res.statusCode = 200; // 200 = OK
-  res.setHeader("Content-Type", "text/html");
-  res.write("<h1>Demo page</h1>");
-  res.end();
+app.get("/", (req, res) => {
+  res.send("Hello World!");
 });
 
-// server is listening to incoming requests on port 5000 on localhost
-server.listen(5000, function () {
-  console.log("Listening on port http://localhost:5000");
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`);
 });
