@@ -1,0 +1,23 @@
+{
+  "name": "mimre",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohjohnsen/mimre.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ohjohnsen/mimre/issues"
+  },
+  "homepage": "https://github.com/ohjohnsen/mimre#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
